@@ -1,0 +1,135 @@
+body {
+    margin:0;
+    padding:0;
+    background-color:black;
+    color:#f4f4f4;
+    font-family: 'Montserrat';
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+
+h1, h2, h3, h4, h5 {
+    font-weight:bold;
+    color:rgb(255, 255, 255);
+    text-shadow: 3px 1px 1px #292929;
+}
+
+.wrap {
+    width:100%;
+    margin: 0 auto;
+}
+
+main {
+    display:block;
+    background-color:#ffff;
+}
+
+.container {
+    width:100%;
+    max-width:760px;
+    margin: 0 auto;
+    padding:0 20px;
+}
+
+section.module p {
+    margin-bottom:40px;
+}
+
+section.module:last-child{
+    margin-bottom:0;
+}
+
+section.module h2{
+    margin-bottom:40px;
+    font-size:30px;
+}
+
+section.module.content {
+    padding:40px 0;
+    background:#000000;
+}
+
+section.module.parallax{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    height:100vh !important;
+    width:100%;
+    position:relative;
+    overflow:hidden;
+    background-position:50% 50%;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    
+
+}
+
+section.module.parallax::after{
+    content: "";
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:8;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(204,204,204,0) 45%, rgba(255,255,255,0) 61%, rgba(224,224,224,0) 65%, rgba(0,0,0,1) 100%);
+    
+}
+
+
+section.module.parallax-1{
+    background-image:url(kridst.jpg)
+}
+
+section.module.parallax-2{
+    background-image:url(egito.jpg)
+}
+
+section.module.parallax-3{
+    background-image:url(15.jpg)
+}
+
+section.module.parallax h1{
+    color:white;
+    text-align:center;
+    font-size:78px;
+    z-index:50;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 4px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #212121;
+  border: 0px none #000000;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #292929;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #333333;
+  border: 0px none #000000;
+  border-radius: 19px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #333333;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
